@@ -27,8 +27,8 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
-app.use('/upload',csvUpload)
-app.use('/api',userAgentApi)
+app.use('/upload',csvUpload);
+app.use('/api',userAgentApi);
 // app.use('/users', usersRouter);
 
 app.use(notFound);
