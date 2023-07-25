@@ -7,8 +7,7 @@ const User = require('../models/UserModel');
 router.get('/user/search', async (req, res) => {
   try {
     const { username } = req.query;
-    console.log('Received username:', username);
-
+    
     // Find the user with the given username
     const user = await User.findOne({ firstName: username });
 
